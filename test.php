@@ -1,5 +1,5 @@
 <?php
-	$data = '{"coupon":"1234","machineId":"00000000b200c8d6", "goodId":"1995", "quantity":1, "time":'.time().', "typePay": 4}';
+	$data = '{"coupon":"1234","machineId":"00000000b200c8d6", "goodId":"1503", "quantity":1, "time":'.time().', "typePay": 4}';
 	$data= json_decode($data,true); //thong tin lay ve từ MQ.
   	//tạo url để truy cập trang web.
   	// $url= 'http://vmstest.sab.com.vn/priceSaleAPI';

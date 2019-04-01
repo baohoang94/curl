@@ -1,6 +1,5 @@
 <?php
-	$data = array('codeMachine'=>'0000000064b1fce3','data'=>json_encode(array('transactionId'=>'13','statusPay'=>'00')));
-	$stringSend= array();
+	$data = array('codeMachine'=>'00000000d1278a66','data'=>json_encode(array('transactionId'=>'3','statusPay'=>'00')));
         $url= 'http://210.245.26.70/app/Plugin/kiosk/controller/amqplib/php/sendTransferToKiosk_server.php';
 
         //$url= 'http://vms.sab.com.vn/app/Plugin/kiosk/controller/amqplib/php/'.$urlSend;
@@ -12,11 +11,9 @@
 	      // $dataLog['Log']['urlSend']=$url;
   	    // $modelLog->save($dataLog);
 
-        foreach($data as $key=>$value){
-            $stringSend[]= $key.'='.$value;
-        }
+        
 
-        $stringSend= implode('&', $stringSend);
+        $stringSend= http_build_query($data);
 
         $ch = curl_init();
 
