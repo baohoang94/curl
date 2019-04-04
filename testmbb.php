@@ -1,10 +1,10 @@
 <?php
-	$data = '{"statusCode":"00","amount":4500,"merchantName":"sab","merchantId":"sabmerchant","transactionDate":"20190322113417","orderId":"60071","statusMessage":"Tru tien thanh cong","productId":""}';
+	$data = '{"statusCode":"00","amount":4500,"merchantName":"sab","merchantId":"sabmerchant","transactionDate":"20190322113417","orderId":"11946","statusMessage":"Tru tien thanh cong","productId":""}';
 	//$data= json_decode($data,true); //thong tin lay ve từ MQ.
   	// $stringSend= array();
   	//tạo url để truy cập trang web.
-  	$url= 'http://web2.com/callBackMbbankAPI';
-  	// $url= 'http://210.245.26.70/callBackMbbankAPI';
+  	// $url= 'http://web2.com/callBackMbbankAPI';
+  	$url= 'http://210.245.26.70/callBackMbbankAPI';
   	// if(is_array($data)){
 		// $stringSend = http_build_query($data);
 	// print_r($stringSend);
