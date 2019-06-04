@@ -1,9 +1,9 @@
 <?php
-	$data = '{"coupon":"1234","machineId":"00000000b200c8d6", "goodId":"1503", "quantity":1, "time":'.time().', "typePay": 4}';
+	$data = '{"coupon":"","machineId":"00000000d1278a66", "goodId":"1133", "quantity":1, "time":'.time().', "typePay": 4}';
 	$data= json_decode($data,true); //thong tin lay ve từ MQ.
   	//tạo url để truy cập trang web.
-  	// $url= 'http://vmstest.sab.com.vn/priceSaleAPI';
-  	$url= 'http://web2.com/priceSaleAPI';
+  	$url= 'http://210.245.26.70/priceSaleAPI';
+  	// $url= 'http://vms.sab.com.vn/priceSaleAPI';
   	if(is_array($data)){
 		$stringSend= http_build_query($data);
 		$ch = curl_init();
